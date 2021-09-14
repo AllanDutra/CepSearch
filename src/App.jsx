@@ -18,6 +18,9 @@ import {BiSearchAlt} from 'react-icons/bi'
 import {RiInstagramLine} from 'react-icons/ri';
 import {GoMarkGithub} from 'react-icons/go';
 
+// functions
+import { getCep } from "./functions/requests";
+
 const theme = createTheme({
   palette:{
     primary:{
@@ -53,15 +56,15 @@ function App() {
   // PESQUISANDO CEP APÓS USUÁRIO CLICAR NO BOTÃO
   function searchCep(){
     if(cep){
-      
+      getCep(cep, initialObjShow, setObjShow);
     }
   }
-
+  
   // PESQUISANDO CEP APÓS USUÁRIO TECLAR ENTER
   function keyPress(e){
-
+    
     if(e.key === "Enter"){
-
+      getCep(cep, initialObjShow, setObjShow);
     }
 
   }
