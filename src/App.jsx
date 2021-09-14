@@ -82,70 +82,88 @@ function App() {
               <img src={iconEarth} alt="Planeta" className="earth"/>
             </div>
 
-            <h1>Sistema de pesquisa de CEP</h1>
+            <span className='titleHeader'>
+              <h1>Sistema de pesquisa de CEP</h1>
+              <img src={iconEarth} alt="Planeta" className="earth2"/>
+            </span>
 
           </div>
 
           <div className="contentPage">
 
             <div className="cardsPage">
-              <TextField
-              variant="filled"
-              style={{width:'100%', }}
-              size="medium"
-              label="CEP"
-              InputProps={{style:{
-                backgroundColor:'white',
-                borderRadius:'0.2em'
-              }, endAdornment:
-              <IconButton onClick={searchCep}>
-                  <BiSearchAlt color="#0062D7"/>
-                </IconButton>
-              }}
-              onChange={alterCep}
-              onKeyDown={(e)=>keyPress(e)}
-              value={cep}
-              />
+              
+              <span className="inputCep">
+                <TextField
+                className="inputCep"
+                variant="filled"
+                style={{width:'100%', }}
+                size="medium"
+                label="CEP"
+                InputProps={{style:{
+                  backgroundColor:'white',
+                  borderRadius:'0.2em'
+                }, endAdornment:
+                <IconButton onClick={searchCep}>
+                    <BiSearchAlt color="#0062D7"/>
+                  </IconButton>
+                }}
+                onChange={alterCep}
+                onKeyDown={(e)=>keyPress(e)}
+                value={cep}
+                />
 
-              <Information
-              title="localidade"
-              value={objShow.localidade ? objShow.localidade + " - " + objShow.uf : <em>Não definida</em>}
-              />
+              </span>
+              
+              <span className="cards">
+                <Information
+                title="localidade"
+                value={objShow.localidade ? objShow.localidade + " - " + objShow.uf : <em>Não definida</em>}
+                />
 
-              <Information
-              title="bairro"
-              value={objShow.bairro ? objShow.bairro : <em>Não definido</em>}
-              />
+                <Information
+                title="bairro"
+                value={objShow.bairro ? objShow.bairro : <em>Não definido</em>}
+                />
 
-              <Information
-              title="logradouro"
-              value={objShow.logradouro ? objShow.logradouro : <em>Não definido</em>}
-              />
+                <Information
+                title="logradouro"
+                value={objShow.logradouro ? objShow.logradouro : <em>Não definido</em>}
+                />
 
-              <Information
-              title="ddd"
-              value={objShow.ddd ? objShow.ddd : <em>Não definido</em>}
-              />
+                <Information
+                title="ddd"
+                value={objShow.ddd ? objShow.ddd : <em>Não definido</em>}
+                />
 
-              <Information
-              title="ibge"
-              value={objShow.ibge ? objShow.ibge : <em>Não definido</em>}
-              />
+                <Information
+                title="ibge"
+                value={objShow.ibge ? objShow.ibge : <em>Não definido</em>}
+                />
 
-              <Information
-              title="gia"
-              value={objShow.gia ? objShow.gia : <em>Não definido</em>}
-              />
+                <Information
+                title="gia"
+                value={objShow.gia ? objShow.gia : <em>Não definido</em>}
+                />
 
-              <Information
-              title="siafi"
-              value={objShow.siafi ? objShow.siafi : <em>Não definido</em>}
-              />
+                <Information
+                title="siafi"
+                value={objShow.siafi ? objShow.siafi : <em>Não definido</em>}
+                />
+              </span>
+              
             </div>
             
             <div className="footPage">
-              <SocialMedia icon={<RiInstagramLine size="1.5em" style={{marginRight:'0.5em'}}/>} text="@allan_dutraa" link="https://www.instagram.com/allan_dutraa/"/>
-              <SocialMedia icon={<GoMarkGithub size="1.5em" style={{marginRight:'0.5em'}}/>} text="AllanDutra" link="https://github.com/AllanDutra"/>
+
+              <span className="msgFoot">
+                Me siga nas redes sociais e se possível divulgue meu trabalho, obrigado!
+              </span>
+
+              <div className="iconsFoot">
+                <SocialMedia icon={<RiInstagramLine size="1.5em" style={{marginRight:'0.5em'}}/>} text="@allan_dutraa" link="https://www.instagram.com/allan_dutraa/"/>
+                <SocialMedia icon={<GoMarkGithub size="1.5em" style={{marginRight:'0.5em'}}/>} text="AllanDutra" link="https://github.com/AllanDutra"/>
+              </div>
             </div>
 
           </div>
