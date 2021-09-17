@@ -37,7 +37,7 @@
 
 ### `🔎 Como usar`
 
-<p>$ git clone https://github.com/AllanDutra/Curriculum-Generator.git</p>
+<p>$ git clone https://github.com/AllanDutra/CepSearch.git</p>
 
 <p>$ npm install</p>
 
