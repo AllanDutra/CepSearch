@@ -61,7 +61,7 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
+  height: 100%;
   top: 7.5em;
 }
 
