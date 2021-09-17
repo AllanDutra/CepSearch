@@ -7,7 +7,7 @@
 <hr/>
 
 <div>
-  <img width="70%" src="https://ik.imagekit.io/bzfsfuncunl/CepSearch-Desktop_e3RRU9_pG.jpg" alt="Sistema de CEP - Desktop" title="Cep-Search">
+  <img width="75%" src="https://ik.imagekit.io/bzfsfuncunl/CepSearch-Desktop_e3RRU9_pG.jpg" alt="Sistema de CEP - Desktop" title="Cep-Search">
   <img width="20%" src="https://ik.imagekit.io/bzfsfuncunl/CepSearch-Android_YFAntpDCw.jpg" alt="Sistema de CEP - Mobile" title="Cep-Search">
 </div>
 
