@@ -7,8 +7,8 @@
 <hr/>
 
 <div>
-  <img src="https://ik.imagekit.io/bzfsfuncunl/CepSearch-Desktop_e3RRU9_pG.jpg" alt="Sistema de CEP - Desktop" title="Cep-Search">
-  <img src="https://ik.imagekit.io/bzfsfuncunl/CepSearch-Android_YFAntpDCw.jpg" alt="Sistema de CEP - Mobile" title="Cep-Search">
+  <img width="70%" src="https://ik.imagekit.io/bzfsfuncunl/CepSearch-Desktop_e3RRU9_pG.jpg" alt="Sistema de CEP - Desktop" title="Cep-Search">
+  <img width="30%" src="https://ik.imagekit.io/bzfsfuncunl/CepSearch-Android_YFAntpDCw.jpg" alt="Sistema de CEP - Mobile" title="Cep-Search">
 </div>
 
 ### `Sobre`
