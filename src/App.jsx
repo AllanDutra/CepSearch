@@ -9,6 +9,7 @@ import SocialMedia from "./components/SocialMedia";
 import fundoAzul from './img/FundoAzul.svg';
 import logoAllanProjects from './img/LogoAllanProjects.svg';
 import iconEarth from './img/IconEarth.svg';
+import imgTerra from './img/img1.jpg';
 
 // material-ui
 import {createTheme, IconButton, TextField, ThemeProvider} from '@material-ui/core';
@@ -152,6 +153,58 @@ function App() {
                 />
               </span>
               
+              <div className="containerShow">
+
+                <img src={imgTerra} alt="terra" width="100%" height="170em" />
+
+                <div className="cardsFull">
+
+                  <span className="topCardsFull">
+                    <span className="titleTopCard">
+                      {objShow.localidade ? objShow.localidade + " - " + objShow.uf : <em>Não definida</em>}
+                    </span>
+                    <span style={{fontSize:'0.9em'}}>
+                      {objShow.cep ? objShow.cep : <em>Não definido</em>}
+                    </span>
+                  </span>
+
+                  <div className="informationsCardFull">
+                    <Information
+                    title="bairro"
+                    value={objShow.bairro ? objShow.bairro : <em>Não definido</em>}
+                    id="infoFull"
+                    />
+                    <Information
+                    title="logradouro"
+                    value={objShow.logradouro ? objShow.logradouro : <em>Não definido</em>}
+                    id="infoFull"
+                    />
+                    <Information
+                    title="ddd"
+                    value={objShow.ddd ? objShow.ddd : <em>Não definido</em>}
+                    id="infoFull"
+                    />
+                    <Information
+                    title="ibge"
+                    value={objShow.ibge ? objShow.ibge : <em>Não definido</em>}
+                    id="infoFull"
+                    />
+                    <Information
+                    title="gia"
+                    value={objShow.gia ? objShow.gia : <em>Não definido</em>}
+                    id="infoFull"
+                    />
+                    <Information
+                    title="siafi"
+                    value={objShow.siafi ? objShow.siafi : <em>Não definido</em>}
+                    id="infoFull"
+                    />
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
             
             <div className="footPage">

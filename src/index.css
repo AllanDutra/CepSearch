@@ -58,6 +58,10 @@ img{
 .contentPage{
   width: 100%;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
   top: 7.5em;
 }
 
@@ -125,6 +129,9 @@ img{
 .earth2{
   display: none;
 }
+.containerShow{
+  display: none;
+}
 
 /* SMALL DEVICES - TABLETS */
 @media screen and (min-width:720px) {
@@ -165,15 +172,52 @@ img{
     display: flex;
     margin: 0;
   }
+  .containerShow{
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
   .contentPage{
-    top: 6em;
+    top: 5em;
   }
   .cardsPage{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .cards{
     display: none;
+  }
+  .cardsFull{
+    width: 100%;
+    margin-top: -1em;
+    padding: 0.5em 1em 2em 1em;
+    background-color: white;
+    border-radius: 0em 0em 0.5em 0.5em;
+    box-shadow: 0px 1px 15.5px rgba(0, 0, 0, 0.15);
+  }
+  .topCardsFull{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5em;
+  }
+  .titleTopCard{
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  .informationsCardFull{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #infoFull{
+    background-color: #FAFAFA;
+    width: 49%;
+  }
+  .footPage{
+    margin-top: 1em;
   }
 }
 
@@ -188,5 +232,5 @@ img{
   }
   .msgFoot{
       display: block;
-    }
+  }
 }

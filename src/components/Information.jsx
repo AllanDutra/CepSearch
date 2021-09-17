@@ -2,7 +2,7 @@ import React from "react";
 
 const Information = (props) => {
     return (
-        <div className="cardInfo">
+        <div className="cardInfo" id={props.id}>
             <span className="titleInfo">
                 {props.title}
             </span>
